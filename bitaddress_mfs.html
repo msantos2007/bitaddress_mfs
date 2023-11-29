@@ -13629,8 +13629,8 @@ window.addEventListener("load", function () { return __awaiter(void 0, void 0, v
                     document.getElementsByTagName("head")[0].appendChild(newLink);
                 }
                 // show warning if not running from a local file
-                if (window.location.protocol !== "file:") {
-                    document.getElementById("warning-text").style.display = "";
+                if (window.location.protocol === "file:") {
+                    document.getElementById("warning-text").style.display = "none";
                 }
                 // dark mode events
                 {
